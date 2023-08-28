@@ -1,0 +1,23 @@
+.boton-ale{
+    background-color: #ff5050;
+    color: white;
+    box-shadow: 1px 2px #ebebeb;
+}
+
+.boton-ale:hover{
+    background-color: #fd3a3a;
+    color: white;
+    box-shadow: 2px 3px #b3b3b3;
+}
+
+.zona-cliente{
+    background-color: #dbdbdb;
+    padding: 14px;
+    box-shadow: 5px 5px #ff5050;
+    border-radius: 12px;
+}
+
+.detalle1{
+    BACKGROUND-COLOR: #c3c3c3;
+    COLOR: WHITE;
+}

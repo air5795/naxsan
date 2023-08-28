@@ -1,0 +1,11 @@
+.bu{  
+    border:none ;
+    border-bottom: 2px solid gray ;
+    background-color: rgb(238, 238, 238);
+}
+
+input:focus ~ label{
+    
+    font-weight: 600;
+    color: coral;
+}
