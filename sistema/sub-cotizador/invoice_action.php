@@ -87,6 +87,31 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
 					  $printLink = '<a class="btn btn-sm btn-outline-danger w-100" target="_blank" href="print_invoice.php?invoice_id=' . $invoiceDetails["id_cotizacion"] . '" title="Imprimir Cotizacion" ><span <i class="bi bi-file-earmark-pdf"></i> PDF</a>';
 					  $editLink = '<a style="background-color:beige; color:#646464" class="btn btn-sm btn-warning w-100" href="edit_invoice.php?update_id=' . $invoiceDetails["id_cotizacion"] . '"  title="Editar Cotizacion"><i class="bi bi-pencil-square"></i> </a>';
 					  $deleteLink = '<a class="btn btn-sm btn-danger w-100 deleteInvoice" href="#" id="' . $invoiceDetails["id_cotizacion"] . '" class="deleteInvoice"  title="Eliminar Cotizacion"><i class="bi bi-trash-fill"></i> </a>';
+
+					  	if ($invoiceDetails['id_usuario'] == 'Jazmin Velasco Diaz') {
+						$user = '<span style="font-size:12px;background-color:#fbe9f4;text-align: left; color:#5a5a5a;" class="btn  btn-sm w-100"><i class="bi bi-person-circle"></i> Jazmin Velasco   </span>'.'<br/>';
+						} else {
+						$user = '';
+						}
+
+						if ($invoiceDetails['id_usuario'] == 'Alejandro Iglesias Raldes') {
+							$user2 = '<span style="font-size:12px;background-color:#e9ffca;text-align: left; color:#5a5a5a;" class="btn  btn-sm w-100"><i class="bi bi-person-circle"></i> Alejandro Iglesias  </span>'.'<br/>';
+						} else {
+							$user2 = '';
+						}
+
+						if ($invoiceDetails['id_usuario'] == 'Deyci Eveling Colque Pacha') {
+							$user3 = '<span style="font-size:12px;background-color:#cafbff;text-align: left; color:#5a5a5a;" class="btn  btn-sm w-100"><i class="bi bi-person-circle"></i> Eveling Colque </span>'.'<br/>';
+						} else {
+							$user3 = '';
+						}
+
+						if ($invoiceDetails['id_usuario'] == 'Alberto Arispe Ponce') {
+							$user4 = '<span style="font-size:12px;background-color:#2f2d2a;text-align: left; color:white;" class="btn  btn-sm w-100"><i class="bi bi-person-circle"></i> Alberto Arispe </span>'.'<br/>';
+						} else {
+							$user4 = '';
+						}
+
   
 					  $data[] = array(
 						  'id_cotizacion' => $invoiceDetails["id_cotizacion"],
@@ -94,7 +119,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
 						  'cliente_nombre' => $invoiceDetails["cliente_nombre"],
 						  'nota' => $invoiceDetails["nota"],
 						  'total_antes_impuestos' => number_format($invoiceDetails["total_antes_impuestos"], 2, '.', ',') . ' Bs',
-						  'id_usuario' => $invoiceDetails["id_usuario"],
+						  'id_usuario' => $user.$user2.$user3.$user4,
 						  'print_link' => $printLink,
 						  'edit_link' => $editLink,
 						  'delete_link' => $deleteLink

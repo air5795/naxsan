@@ -57,10 +57,10 @@
             $ale =  '<span style="font-size:12px;background-color:#fff5ca;text-align: left;" class="btn btn-info btn-sm w-100"><i class="bi bi-person-circle"></i> Alejandro Iglesias </span>'.'<br/>'.$fila["ale"].'<br/>';
         }
 
-        if ($fila['edwin'] == '') {
-            $edwin =  '';
+        if ($fila['eveling'] == '') {
+            $eveling =  '';
         }else {
-            $edwin =  '<span style="font-size:12px;background-color:#fff5ca;text-align: left;" class="btn btn-info btn-sm w-100"><i class="bi bi-person-circle"></i> Edwin Pinto </span>'.'<br/>'.$fila["edwin"].'<br/>';
+            $eveling =  '<span style="font-size:12px;background-color:#fff5ca;text-align: left;" class="btn btn-info btn-sm w-100"><i class="bi bi-person-circle"></i> Eveling Colque </span>'.'<br/>'.$fila["eveling"].'<br/>';
         }
 
         if ($fila['num_tramite'] == '') {
@@ -131,8 +131,8 @@
         }
 
         
-        if ($fila['encargado'] == 'edwin') {
-            $encargado5 = '<span style="font-size:12px;background-color:#cafbff;text-align: left;" class="btn btn-info btn-sm w-100"><i class="bi bi-pin-fill"></i> Edwin </span>'.'<br/>';
+        if ($fila['encargado'] == 'eveling') {
+            $encargado5 = '<span style="font-size:12px;background-color:#cafbff;text-align: left;" class="btn btn-info btn-sm w-100"><i class="bi bi-pin-fill"></i> Eveling Colque </span>'.'<br/>';
         } else {
             $encargado5 = '';
         }
@@ -173,7 +173,7 @@
         $sub_array[] = $estado;
         
         $sub_array[] = $encargado1.$encargado2.$encargado3.$encargado4.$encargado5;
-        $sub_array[] =  $jazmin.$mavel.$nicol.$ale.$edwin;
+        $sub_array[] =  $jazmin.$mavel.$nicol.$ale.$eveling;
         $sub_array[] = '<button type="button" name="editar" id="'.$fila["id_pro"].'" class="btn btn-warning btn-sm boton-w  editar" style="background-color: #fbe806;color: #505050; color:#767676;"><i class="fa-solid fa-pencil"></i> </button>';
         $sub_array[] = '<button type="button" name="borrar" id="'.$fila["id_pro"].'" class="btn btn-danger btn-sm boton-w borrar" style="background-color: #ff5757;color: #505050; color:white;"><i class="fa-solid fa-trash-can"></i> </button>';
         $datos[] = $sub_array;

@@ -136,8 +136,8 @@ $DateAndTime = date('d-m-Y ');
                                     $p = 'Mariana Nicol Erquicia Camacho';
                                 }  else if ($personal == 'ale') {
                                     $p = 'Alejandro Iglesias Raldes ';
-                                }  else if ($personal == 'edwin') {
-                                    $p = 'Edwin Pinto Ramirez';
+                                }   else if ($personal == 'Eveling') {
+                                    $p = 'Deyci Eveling Colque Pacha';
                                 }
                                  
 

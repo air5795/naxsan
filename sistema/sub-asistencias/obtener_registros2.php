@@ -62,8 +62,8 @@ $filtered_rows = $stmt->rowCount();
         }
 
         
-        if ($fila['usuario_id'] == 'edwin') {
-            $encargado5 = '<span style="font-size:12px;background-color:#cafbff;text-align: left; color:#5a5a5a;" class="btn  btn-sm w-100"><i class="bi bi-person-circle"></i> Edwin Pinto </span>'.'<br/>';
+        if ($fila['usuario_id'] == 'Eveling') {
+            $encargado5 = '<span style="font-size:12px;background-color:#cafbff;text-align: left; color:#5a5a5a;" class="btn  btn-sm w-100"><i class="bi bi-person-circle"></i> Deyci Eveling Colque Pacha </span>'.'<br/>';
         } else {
             $encargado5 = '';
         }

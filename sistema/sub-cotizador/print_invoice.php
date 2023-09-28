@@ -178,7 +178,10 @@ foreach ($invoiceItems as $invoiceItem) {
     $output .= '<tr>
         <td align="center">' . $count . '</td>
         <td align="center">' .'00CMPRO'. $invoiceItem["codigo_item"] . '</td>
-        <td align="left">' . $invoiceItem["nombre_item"] . '</td>
+        <td align="left">
+            <textarea name="nombre_item[]" class="form-control" style="resize: none; height: auto; background-color: transparent; border:none;font-family: sans-serif;" readonly>'
+            . $invoiceItem["nombre_item"] . '</textarea>
+        </td>
         <td align="center">' . $invoiceItem["marca_item"] . '</td>
         <td align="center">' . $invoiceItem["unidad_item"] . '</td>
         <td align="center">' . intval($invoiceItem["cantidad_item"]) . '</td>
@@ -186,6 +189,8 @@ foreach ($invoiceItems as $invoiceItem) {
         <td align="right">' . number_format($invoiceItem["subtotal_item"], 2, '.', ',') . ' Bs' . '</td>
     </tr>';
 }
+
+
 
 $output .= '</table>';
 $output .= '</table>';

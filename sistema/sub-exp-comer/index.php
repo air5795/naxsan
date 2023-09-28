@@ -222,7 +222,7 @@
                         <div class="col-6">
                                 <div class=" mb-3 mb-md-0">
                                     <span for="inputFirstName">Profesional Responsable (****)</span> 
-                                    <input class="form-control form-control-sm warning" name="profesional_resp" id="profesional_resp" type="text" value="ALBERTO ARISPE PONCE" />
+                                    <input class="form-control form-control-sm warning" name="profesional_resp" id="profesional_resp" type="text" value="DENIS DANIEL ARISPE PONCE" />
                                  </div>
                         </div>
 

@@ -157,7 +157,7 @@
                     <option value="mavel">Mavel Condori Flores</option>
                     <option value="ale">Alejandro Iglesias Raldes </option>
                     <option value="nicol">Mariana Nicol Erquicia Camacho </option>
-                    <option value="edwin">Edwin Mario Pinto Ramirez </option>
+                    <option value="eveling">Deyci Eveling Colque Pacha </option>
                                                 
 
                 </select>
@@ -199,7 +199,7 @@
                     <option value="mavel">Mavel Condori Flores</option>
                     <option value="ale">Alejandro Iglesias Raldes </option>
                     <option value="nicol">Mariana Nicol Erquicia Camacho </option>
-                    <option value="edwin">Edwin Mario Pinto Ramirez </option>
+                    <option value="eveling">Deyci Eveling Colque Pacha </option>
                                                 
 
                 </select>
@@ -235,7 +235,7 @@
                     <option value="mavel">Mavel Condori Flores</option>
                     <option value="ale">Alejandro Iglesias Raldes </option>
                     <option value="nicol">Mariana Nicol Erquicia Camacho </option>
-                    <option value="edwin">Edwin Mario Pinto Ramirez </option>
+                    <option value="eveling">Deyci Eveling Colque Pacha</option>
                                                 
 
                 </select>
@@ -565,7 +565,7 @@
                                                 <option value="mavel">Mavel Condori Flores</option>
                                                 <option value="ale">Alejandro Iglesias Raldes </option>
                                                 <option value="nicol">Mariana Nicol Erquicia Camacho </option>
-                                                <option value="edwin">Edwin Mario Pinto Ramirez </option>
+                                                <option value="eveling">Deyci Eveling Colque Pacha </option>
                                 </select>
                         </div>
 
@@ -599,8 +599,8 @@
                         
 
                         <div class="col-6">
-                            <span for="inputFirstName">Edwin</span>
-                            <input class="form-control form-control-sm  bg-opacity-10" id="edwin" name="edwin" type="text" value=""  />
+                            <span for="inputFirstName">Eveling</span>
+                            <input class="form-control form-control-sm  bg-opacity-10" id="eveling" name="eveling" type="text" value=""  />
                         </div>
 
                         <br>
@@ -806,7 +806,7 @@
             var mavel = $('#mavel').val();
             var nicol = $('#nicol').val();
             var ale = $('#ale').val();
-            var edwin = $('#edwin').val();
+            var eveling = $('#eveling').val();
             	
 		    if(nombre != '' && ubicacion != '' && tipo != '' && fecha != '' && tipo2 != '' && estado != '')
                 {
@@ -873,7 +873,7 @@
                         $('#ale').val(data.ale);
                         $('#jazmin').val(data.jazmin);
                         $('#nicol').val(data.nicol);
-                        $('#edwin').val(data.edwin);
+                        $('#eveling').val(data.eveling);
                         $('.modal-title').text("Editar Proyecto");
                         $('#id_pro').val(id_pro);
                     

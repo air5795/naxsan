@@ -177,6 +177,30 @@ $(document).ready(function() {
 		
 	  });
 
+	  $(document).on('click', '#addtext2', function() {
+		count++;
+		var htmlRows = '';
+		htmlRows += '<tr>';
+		htmlRows += '<td style="padding: 0;"><input class="itemRow" type="checkbox"></td>';
+		htmlRows += '<td style="padding: 0;"><input type="text" name="productCode[]" id="productCode_' + count + '" class="form-control form-control-sm" autocomplete="off"></td>';
+		
+		//htmlRows += '<td><select name="productName[]" id="productName_' + count + '" class="form-control productSelect" onchange="getProductPrice(' + count + ')"><option value="">Seleccione un producto</option></select></td>';
+		htmlRows += '<td style="padding: 0;"><textarea name="productName[]" id="productName_' + count + '" class="form-control form-control-sm" rows="4" autocomplete="off"></textarea></td>';
+
+		htmlRows += '<td style="padding: 0;"><input type="text" name="marca[]" id="marca_' + count + '" class="form-control form-control-sm marca" autocomplete="off"></td>';
+		htmlRows += '<td style="padding: 0;"><input type="text" name="unidad[]" id="unidad_' + count + '" class="form-control form-control-sm unidad" autocomplete="off"></td>';
+
+		htmlRows += '<td style="padding: 0;"><input type="number" name="quantity[]" id="quantity_' + count + '" class="form-control form-control-sm quantity" autocomplete="off"></td>';
+		htmlRows += '<td style="padding: 0;"><input type="number" name="price[]" id="price_' + count + '" class="form-control form-control-sm price" autocomplete="off"></td>';
+		htmlRows += '<td style="padding: 0;"><input type="number" name="total[]" id="total_' + count + '" class="form-control form-control-sm total" autocomplete="off"></td>';
+		htmlRows += '<td style="padding: 0;"><input type="number" name="pricec[]" id="pricec_' + count + '" class="form-control form-control-sm pricec" autocomplete="off"></td>';
+		htmlRows += '<td style="padding: 0;"><input type="number" name="totalc[]" id="totalc_' + count + '" class="form-control form-control-sm totalc" autocomplete="off"></td>';
+		htmlRows += '</tr>';
+		$('#invoiceItem').append(htmlRows);
+		
+		
+	  });
+
 
 	  
 	  function loadItems(id) {

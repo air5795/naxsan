@@ -36,7 +36,7 @@ ob_start();
                         <td colspan="10" class="comer">EXPERIENCIA GENERAL</td>
                     </tr> 
                     <tr>
-                        <td colspan="10" class="comer2">Empresa Comercializadora PONCELET</td>
+                        <td colspan="10" class="comer2">Empresa Comercializadora NAXSAN</td>
                     </tr>
                     <tr class="comer3">
                         <th>N°</th>

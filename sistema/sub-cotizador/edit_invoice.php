@@ -153,7 +153,11 @@ if (!empty($_GET['update_id']) && $_GET['update_id']) {
 							<tr>
 								<td style="padding: 0;"><input class="itemRow" type="checkbox"></td>
 								<td style="padding: 0;"><input type="text" value="<?php echo $invoiceItem["codigo_item"]; ?>" name="productCode[]" id="productCode_<?php echo $count; ?>" class="form-control form-control-sm" autocomplete="off"></td>
-								<td style="padding: 0;"><input type="text" value="<?php echo $invoiceItem["nombre_item"]; ?>" name="productName[]" id="productName_<?php echo $count; ?>" class="form-control form-control-sm price" autocomplete="off"></td>
+								<td style="padding: 0;">
+									<textarea name="productName[]" id="productName_<?php echo $count; ?>" class="form-control form-control-sm price auto-expand" style="height: auto;" autocomplete="off"><?php echo $invoiceItem["nombre_item"]; ?></textarea>
+								</td>
+
+
 
 								<td style="padding: 0;"><input type="text" value="<?php echo $invoiceItem["marca_item"]; ?>" name="marca[]" id="marca_<?php echo $count; ?>" class="form-control form-control-sm marca" autocomplete="off"></td>
 								<td style="padding: 0;"><input type="text" value="<?php echo $invoiceItem["unidad_item"]; ?>" name="unidad[]" id="unidad_<?php echo $count; ?>" class="form-control form-control-sm unidad" autocomplete="off"></td>
@@ -174,6 +178,7 @@ if (!empty($_GET['update_id']) && $_GET['update_id']) {
 				<button class="btn btn-danger btn-sm delete" id="removeRows" type="button"><i class="bi bi-dash-lg"></i></button>
 					<button class="btn btn-success btn-sm" id="addRows" type="button" onclick="addRow()"><i class="bi bi-plus-lg"></i></button>
 					<button class="btn btn-success btn-sm" id="addtext" type="button" onclick="addtext()"><i class="bi bi-pencil"></i></button>
+					<button class="btn btn-success btn-sm" id="addtext2" type="button" onclick="addtext2()"><i class="bi bi-pencil-square"></i></button>
 				</div>
 			</div>
 			<div class="row">
@@ -326,4 +331,23 @@ if (!empty($_GET['update_id']) && $_GET['update_id']) {
     };
     xhr.send();
   }
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtener la cantidad de elementos textarea
+    var textareas = document.querySelectorAll("textarea[name='productName[]']");
+    
+    // Iterar a través de los elementos textarea y establecer la altura basada en el número de filas recuperadas
+    textareas.forEach(function(textarea) {
+        // Obtener el contenido del textarea
+        var content = textarea.value;
+        
+        // Contar la cantidad de saltos de línea en el contenido para determinar el número de filas
+        var rowCount = (content.match(/\n/g) || []).length + 1;
+        
+        // Establecer la altura en función del número de filas
+        textarea.rows = rowCount;
+    });
+});
 </script>

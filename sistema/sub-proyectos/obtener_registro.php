@@ -28,7 +28,7 @@ if (isset($_POST["id_pro"])) {
         $salida["mavel"] = $fila["mavel"];
         $salida["ale"] = $fila["ale"];
         $salida["nicol"] = $fila["nicol"];
-        $salida["edwin"] = $fila["edwin"];
+        $salida["eveling"] = $fila["eveling"];
 
     
     }

@@ -9,8 +9,8 @@ include("funciones.php");
 if ($_POST["operacion"] == "Crear") {
 
 
-    $stmt = $conexion->prepare("INSERT INTO proyectos_comer(nombre, rubro, tipo, tipo2, ubicacion, num_tramite, num_comprobante, cuce, monto, monto_ofertado, fecha, estado, posicion , observacion , encargado, jazmin, mavel, nicol, ale, edwin)
-                                VALUES(:nombre,:rubro, :tipo, :tipo2, :ubicacion, :tramite, :comprobante, :cuce, :monto,:monto_ofertado, :fecha, :estado, :posicion ,  :observacion, :encargado,  :jazmin, :mavel, :nicol, :ale, :edwin)");
+    $stmt = $conexion->prepare("INSERT INTO proyectos_comer(nombre, rubro, tipo, tipo2, ubicacion, num_tramite, num_comprobante, cuce, monto, monto_ofertado, fecha, estado, posicion , observacion , encargado, jazmin, mavel, nicol, ale, eveling)
+                                VALUES(:nombre,:rubro, :tipo, :tipo2, :ubicacion, :tramite, :comprobante, :cuce, :monto,:monto_ofertado, :fecha, :estado, :posicion ,  :observacion, :encargado,  :jazmin, :mavel, :nicol, :ale, :eveling)");
 
     $resultado = $stmt->execute(
         array(
@@ -33,7 +33,7 @@ if ($_POST["operacion"] == "Crear") {
             ':mavel'            => $_POST["mavel"],
             ':nicol'            => $_POST["nicol"],
             ':ale'              => $_POST["ale"],
-            ':edwin'            => $_POST["edwin"]
+            ':eveling'          => $_POST["eveling"]
         )
     );
 
@@ -47,7 +47,7 @@ if ($_POST["operacion"] == "Editar") {
     
 
     $stmt = $conexion->prepare("UPDATE proyectos_comer SET rubro=:rubro, nombre=:nombre, tipo=:tipo, tipo2=:tipo2, ubicacion=:ubicacion, num_tramite=:tramite, num_comprobante=:comprobante, cuce=:cuce, monto=:monto, 
-    monto_ofertado=:monto_ofertado,fecha=:fecha,estado=:estado,posicion=:posicion,observacion=:observacion,encargado=:encargado,jazmin=:jazmin,mavel=:mavel,ale=:ale,nicol=:nicol,edwin=:edwin WHERE id_pro = :id_pro");
+    monto_ofertado=:monto_ofertado,fecha=:fecha,estado=:estado,posicion=:posicion,observacion=:observacion,encargado=:encargado,jazmin=:jazmin,mavel=:mavel,ale=:ale,nicol=:nicol,eveling=:eveling WHERE id_pro = :id_pro");
 
     $resultado = $stmt->execute(
         array(
@@ -71,7 +71,7 @@ if ($_POST["operacion"] == "Editar") {
             ':mavel'        => $_POST["mavel"],
             ':nicol'        => $_POST["nicol"],
             ':ale'          => $_POST["ale"],
-            ':edwin'        => $_POST["edwin"]
+            ':eveling'      => $_POST["eveling"]
           
 
         )

@@ -130,7 +130,7 @@ $invoice = new Invoice();
 				<h4><i class="bi bi-paperclip"></i> Llenar Informacion de la Cotizacion</h4>
 					<hr>
 
-					<div class="form-group col-sm-6">
+					<div class="form-group col-sm-3">
 						<button class="btn btn-sm boton-ale w-100"><i class="bi bi-person-plus-fill"></i> Nuevo Cliente </button>
 					</div>
 
@@ -269,8 +269,9 @@ $invoice = new Invoice();
 			<div class="row">
 				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 					<button class="btn btn-danger btn-sm delete" id="removeRows" type="button"><i class="bi bi-dash-lg"></i></button>
-					<button class="btn btn-success btn-sm" id="addRows" type="button" onclick="addRow()"><i class="bi bi-plus-lg"></i></button>
+					<button class="btn btn-success btn-sm" id="addRows" type="button" onclick="addRow()"><i class="bi bi-search"></i></button>
 					<button class="btn btn-success btn-sm" id="addtext" type="button" onclick="addtext()"><i class="bi bi-pencil"></i></button>
+					<button class="btn btn-success btn-sm" id="addtext2" type="button" onclick="addtext2()"><i class="bi bi-pencil-square"></i></button>
 					<button class="btn btn-sm boton-ale"  type="button"><i class="bi bi-bag-plus-fill"></i> NUEVO PRODUCTO </button>
 					
 				</div>
